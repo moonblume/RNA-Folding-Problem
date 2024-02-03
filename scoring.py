@@ -1,3 +1,4 @@
+import numpy as np
 from training import calculate_pseudo_energy, AA
 
 bins = np.arange(0, 20) + 1
