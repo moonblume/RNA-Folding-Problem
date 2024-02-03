@@ -25,8 +25,8 @@ for i in range(94):
             dist_z = (float(c3[j].split()[8]) - float(c3[i].split()[8])) ** 2
             distance.append((dist_x + dist_y + dist_z) ** 0.5)
 
-print("\nNucl_pairs:", nucl_pairs)
-print("\nDistances:", distance)
+#print("\nNucl_pairs:", nucl_pairs)
+#print("\nDistances:", distance)
 
 def distance_nucleotide_pairs(n1, n2, ln):
     NN = []
@@ -49,16 +49,16 @@ GG = distance_nucleotide_pairs("G", "G", ln)
 GU = distance_nucleotide_pairs("G", "U", ln)
 UU = distance_nucleotide_pairs("U", "U", ln)
 
-print("\nAA Distances:", AA)
-print("AU Distances:", AU)
-print("AC Distances:", AC)
-print("AG Distances:", AG)
-print("CC Distances:", CC)
-print("CG Distances:", CG)
-print("CU Distances:", CU)
-print("GG Distances:", GG)
-print("GU Distances:", GU)
-print("UU Distances:", UU)
+#print("\nAA Distances:", AA)
+#print("AU Distances:", AU)
+#print("AC Distances:", AC)
+#print("AG Distances:", AG)
+#print("CC Distances:", CC)
+#print("CG Distances:", CG)
+#print("CU Distances:", CU)
+#print("GG Distances:", GG)
+#print("GU Distances:", GU)
+#print("UU Distances:", UU)
 
 """Compute the observed frequencies"""
 
@@ -73,7 +73,7 @@ def calculate_freq(NN, name):
                 count += 1
         freq = count / len(NN)
         freq_all.append(freq)
-        print(f"{name} Frequency for Distance {i + 1}-{i + 2}: {freq}")
+        #print(f"{name} Frequency for Distance {i + 1}-{i + 2}: {freq}")
 
 calculate_freq(AA, "AA")
 calculate_freq(AU, "AU")
@@ -102,7 +102,7 @@ for i in range(20):
             count += 1
     freq = count / len(distance_20)
     freq_ref.append(freq)
-    print(f"Reference Frequency for Distance {i + 1}-{i + 2}: {freq}")
+    #print(f"Reference Frequency for Distance {i + 1}-{i + 2}: {freq}")
 
 print("\nTotal Reference Frequencies:", freq_ref)
 
