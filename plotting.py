@@ -1,9 +1,9 @@
 import numpy as np
 import matplotlib.pyplot as plt
-from training import pseudo_energy  # Import the pseudo_energy function
+from training import calculate_pseudo_energy  # Import the function with a different name
 
-# Call the pseudo_energy function to get the data
-pseudo_energy_data = pseudo_energy()
+# Call the function to get the data
+pseudo_energy_data = calculate_pseudo_energy()
 
 fig, axs = plt.subplots(nrows=2, ncols=5, figsize=(18, 12))
 names = {0: "AA", 1: "AU", 2: "AC", 3: "AG", 4: "CC", 5: "CG", 6: "CU", 7: "GG", 8: "GU", 9: "UU"}
