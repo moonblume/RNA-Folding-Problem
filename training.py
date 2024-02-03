@@ -108,13 +108,13 @@ print("\nTotal Reference Frequencies:", freq_ref)
 
 """Compute the log-ratio of the two frequencies"""
 
-pseudo_energy = []
-for i in range(200):
-    obs = freq_all[i]
-    ref = freq_ref[(i % 20)]
-    if ref != 0 and obs != 0:
-        pseudo_energy.append((-1) * np.log(obs / ref))
-    else:
-        pseudo_energy.append(10)
-
-print("\nPseudo Energies:", pseudo_energy)
+def calculate_pseudo_energy():
+    pseudo_energy = []
+    for i in range(200):
+        obs = freq_all[i]
+        ref = freq_ref[(i % 20)]
+        if ref != 0 and obs != 0:
+            pseudo_energy.append((-1) * np.log(obs / ref))
+        else:
+            pseudo_energy.append(10)
+    return pseudo_energy
