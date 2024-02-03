@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 
 """Data Parsing : Read the pdb file and extractonly the C3' atoms"""
 
-df=pd.read_table("/7shx.pdb")
+df=pd.read_table("7shx.pdb")
 lst=np.array(df.iloc[:,0])
 c3=[]
 for elem in lst:
