@@ -38,5 +38,5 @@ The PDB file used for analysis is located in the /main directory.
 This project is licensed under the MIT License - see the LICENSE file for details.
 
 **Acknowledgments**
-This project was created as part of a research project on RNA structures during my M2 at Paris Saclay in Structural Bio-informatics.
+This project was created as part of a research project with Liza Bogdan on RNA structures during my M2 at Paris Saclay in Structural Bio-informatics.
 Feel free to contribute by submitting issues or pull requests!
