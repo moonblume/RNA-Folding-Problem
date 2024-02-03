@@ -25,10 +25,10 @@ This repository contains scripts for analyzing RNA structures and computing inte
    git clone <https://github.com/moonblume/RNA-Folding-Problem.git>
 
 **Dependencies**
-Python 3
-NumPy
-pandas
-Matplotlib
+- Python 3
+- NumPy
+- Pandas
+- Matplotlib
 
 
 **Data**
